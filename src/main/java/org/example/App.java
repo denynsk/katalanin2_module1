@@ -21,7 +21,7 @@ public class App
 
         CarFactory carFactory = ctx.getBean("carFactory", CarFactory.class);
 //        CarFactory carFactory1 = ctx.getBean("carFactory", CarFactory.class);
-//        carFactory.setProductionSize(6);
+        carFactory.setProductionSize(6);
 //        carFactory1.setProductionSize(2);
         System.out.println(carFactory.getProductionSize());
 //        System.out.println(carFactory1.getProductionSize());
@@ -31,7 +31,6 @@ public class App
 //        System.out.println(carFactory1.toString());
 //        System.out.println(carFactory.hashCode());
 //        System.out.println(carFactory1.hashCode());
-
 
         System.out.println(ctx.getBeanDefinitionCount());
         System.out.println(Arrays.toString(ctx.getBeanDefinitionNames()));
